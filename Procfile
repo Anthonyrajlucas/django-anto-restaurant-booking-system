@@ -1,0 +1,1 @@
+web: gunicorn anto_restaurant.wsgi
