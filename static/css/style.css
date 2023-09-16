@@ -62,4 +62,16 @@ body {
     text-transform: uppercase;
 }
 
+/* --------------------Footer----------------------- */
+
+footer{
+    flex-shrink: 0;
+    text-transform: uppercase;
+}
+.footer {
+    z-index: 1;
+    background-color: #fff;
+    color: #3a3a3a;
+}
+
 
