@@ -53,3 +53,13 @@ body {
     font-size: 18px;
 }
 
+/* Main content styles */
+
+.main-content {
+    background-color: #fff;
+    padding: 40px;
+    margin-top: -40px;
+    text-transform: uppercase;
+}
+
+
