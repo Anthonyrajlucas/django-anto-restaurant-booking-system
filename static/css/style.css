@@ -29,3 +29,27 @@ body {
     font-weight: 600;
     text-transform: uppercase;
 }
+
+/* Header styles */
+
+.header-content {
+    background-image: url('https://res.cloudinary.com/df8bd97ok/image/upload/v1693832072/hm-soy-sauce-noodles-with-cabbage-mpwf-mediumSquareAt3X_ifmrxo.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 2px 2px #0c0c0cfb;
+    font-weight: 650;
+}
+
+.header-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+  
+.header-content p {
+    font-size: 18px;
+}
+
