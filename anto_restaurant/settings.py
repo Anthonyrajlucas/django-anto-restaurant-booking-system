@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'cloudinary',
     'home_page',
+    'contact_us',
 ]
 
 MIDDLEWARE = [
