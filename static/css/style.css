@@ -67,6 +67,7 @@ body {
 footer{
     flex-shrink: 0;
     text-transform: uppercase;
+   
 }
 .footer {
     z-index: 1;
@@ -86,4 +87,5 @@ footer i:hover {
     transform: scale(1.1);
     color: #3a3a3a;
 }
+
 
