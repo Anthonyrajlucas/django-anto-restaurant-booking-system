@@ -73,5 +73,17 @@ footer{
     background-color: #fff;
     color: #3a3a3a;
 }
+footer a {
+    color: var(--green);
+}
 
+footer a:hover {
+    color: #3a3a3a;
+}
+
+footer i:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    color: #3a3a3a;
+}
 
