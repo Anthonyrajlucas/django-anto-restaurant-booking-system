@@ -146,3 +146,60 @@ iframe {
 }
 
 
+/*--------------------------------Login page style--------------------------*/
+/* Apply styles to the background container */
+.background-container {
+    background-color: #08b4ae; /* Set the background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Make it cover the entire viewport height */
+  }
+  
+  /* Style the authentication form container */
+  .auth-form {
+    background-color: #fff; /* Set the background color for the form */
+    border-radius: 8px; /* Add rounded corners */
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a shadow for depth */
+    text-align: center;
+  }
+  
+  /* Style the header (Sign In) */
+  .decorated {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* Style the link to the signup page */
+  .authenticate-link {
+    color: #007bff; /* Set link color */
+    text-decoration: none;
+  }
+  
+  /* Style the form inputs */
+  .input-container {
+    margin-top: 20px;
+  }
+  
+  /* Style the small text (If you have not created an account yet) */
+  small {
+    margin-top: 10px;
+  }
+  
+  /* Style the "Sign In" button */
+  .primaryAction {
+    background-color: #007bff; /* Set button background color */
+    color: #fff; /* Set button text color */
+    padding: 10px 20px; /* Add padding to the button */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Add a smooth transition effect */
+  }
+  
+  /* Hover effect for the button */
+  .primaryAction:hover {
+    background-color: #0056b3; /* Change the background color on hover */
+  }
+  
