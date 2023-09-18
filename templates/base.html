@@ -13,7 +13,7 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
         integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
-        <link rel="stylesheet" href="{%static "css/style.css"%}">
+        <link rel="stylesheet" href="{% static "css/style.css"%}">
         <title>Anto-Restaurant</title>
     </head>
     <body>
@@ -32,7 +32,7 @@
                                 <a class="nav-link {% if url_name == 'home_page' %}active{% endif %}" aria-current="page" href="{% url 'home_page' %}">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/menu_app">Menu</a>
+                                <a class="nav-link" href="{% url 'menu_list' %}">Menu</a>
                             </li>
                             {% if user.is_authenticated %}
                             <li class="nav-item">
