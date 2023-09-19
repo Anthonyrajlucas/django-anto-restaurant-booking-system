@@ -1,14 +1,10 @@
+from django.views.generic import ListView
 from django.shortcuts import render
 from .models import MenuItem
-from .forms import MenuItemForm
-from django.views.generic import ListView, CreateView
+
 
 class MenuListView(ListView):
-    model = MenuItem
-    template_name = 'menu_list.html'
-    context_object_name = 'menu_items'
+    """View menu list"""
 
-class MenuCreateView(CreateView):
     model = MenuItem
-    form_class = MenuItemForm
-    template_name = 'menu_form.html'
+    template_name = "menu_list.html"
