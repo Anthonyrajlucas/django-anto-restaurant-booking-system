@@ -5,6 +5,5 @@ from .models import MenuItem
 
 class MenuListView(ListView):
     """View menu list"""
-
     model = MenuItem
     template_name = "menu_list.html"

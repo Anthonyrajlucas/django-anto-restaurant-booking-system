@@ -15,59 +15,24 @@
             </div>
             {% endif %}
             <br>
-            {% for meal in menu_list %}
+            {% for meal in object_list %}
             <!-- Menu item container -->
             <div class="row flex meal col-12 col-lg-10">
                 <div class="dish col-6 col-md-3 col-lg-2">
-                    <img src="{{ meal.cover.url }}" alt="menu element">
+                    <img src="{{ meal.image_url.url }}" alt="menu element">
                 </div>
                 <div class=" menu-container col-12 col-md-9 col-lg-10 overflow-h">
                     <div class="flex sp-between ">
                         <div class="flex meal-header">
-                            <h5 class="meal-name">{{ meal.name }}</h5>
+                            <h5 class="meal-name">{{ meal.menu_name }}</h5>
                             <p class="price green larger"><b>€{{ meal.price }}</b></p>
                         </div>
-                        {% if user.is_authenticated %}
-                        {% if not user.staff %}
-                        {% for favourite in favourites %}
-                        {% if favourite.meal_id == meal.pk and favourite.user_id == user.email %}
-                        <p class="favourite-exists" hidden></p>
-                        {% endif %}
-                        {% endfor %}
-                        <!-- Add to favourites form -->
-                        <form method="POST" class="add-favourite-form">
-                            {% csrf_token %}
-                            <!-- Hidden input with meal id -->
-                            <label for="mealId{{meal.pk}}" class="visually-hidden">label</label>
-                            <input id="mealId{{meal.pk}}" class="mealIdHidden" type="text" value="{{ meal.pk }}"
-                                hidden>
-                            {{ favourite_form.as_p }}
-                            <!-- Submit button -->
-                            <button type="submit" class="heart flex"><span class="d-none d-lg-block">Add to favourites
-                                </span><i class="far fa-heart"></i></button>
-                        </form>
-                        {% for favourite in favourites %}
-                        {% if favourite.meal_id == meal.pk and favourite.user_id == user.email %}
-                        <!-- Remove from favourites form -->
-                        <form method="POST" action="{% url 'favourite_remove' pk=favourite.pk %}"
-                            class="remove-favourite-form">
-                            {% csrf_token %}
-                            <!-- Hidden input with meal id -->
-                            <label for="mealId{{meal.pk}}r" class="visually-hidden">label</label>
-                            <input id="mealId{{meal.pk}}r" class="mealIdHidden" type="text" value="{{ meal.pk }}"
-                                hidden>
-                            {{ favourite_form.as_p }}
-                            <!-- Submit button -->
-                            <button type="submit" class="heart flex"><span class="d-none d-lg-block">Remove from
-                                    favourites</span><i class="fas fa-heart"></i></button>
-                        </form>
-                        {% endif %}
-                        {% endfor %}
-                        {% endif %}
-                        {% endif %}
                     </div>
                     <div class="row">
-                        <p class="ingredients"><b>Ingredients:</b> {{ meal.ingredients }}</p>
+                        <p class="Description"><b>Description:</b> {{ meal.description }}</p>
+                    </div>
+                    <div class="row">
+                        <p class="Description"><b>Category:</b> {{ meal.category }}</p>
                     </div>
                     <div class="row">
                         <p>.....................................................................................................................................................................................................................
