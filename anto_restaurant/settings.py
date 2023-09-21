@@ -57,6 +57,7 @@ INSTALLED_APPS = [
     'home_page',
     'contact_us',
     'menu_app',
+    'booking',
 
     'crispy_forms',
     'crispy_bootstrap5',
