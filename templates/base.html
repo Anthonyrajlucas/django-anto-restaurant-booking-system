@@ -34,9 +34,11 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="{% url 'menu_list' %}">Menu</a>
                             </li>
+                            {% if user.is_authenticated %}
                             <li class="nav-item">
-                                <a class="nav-link" href="/booking">Booking</a>
+                                <a class="nav-link {% if url_name == 'booking-list' %}active{% endif %}" href="booking/bookings/">Booking</a>
                             </li>
+                            {% endif %}
                             {% if user.is_authenticated %}
                             <li class="nav-item">
                                 <a class="nav-link {% if url_name == 'account_logout' %}active{% endif %}" href="/account/logout/">Logout</a>

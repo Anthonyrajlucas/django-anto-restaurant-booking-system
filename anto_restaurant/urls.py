@@ -21,7 +21,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('home_page.urls')),
     path('contact/', include('contact_us.urls'), name='contact'),
-    path('booking/', include('booking.urls'), name='booking'),
+    path('booking/', include('booking.urls'), name='booking-list'),
     path('account/signup/', signup, name='account_signup'), 
     path('account/login/', login, name='account_login'), 
     path('account/logout/', logout, name='account_logout'),
