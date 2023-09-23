@@ -146,6 +146,7 @@ iframe {
 }
 
 
+
 /*--------------------------------Login page style--------------------------*/
 /* Apply styles to the background container */
 .background-container {
@@ -203,3 +204,139 @@ iframe {
     background-color: #0056b3; /* Change the background color on hover */
   }
   
+  /*booking_list*/
+
+  /* Style the table */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+/* Style table header */
+.table th {
+    background-color: #f2f2f2;
+    text-align: left;
+    padding: 10px;
+}
+
+/* Style table rows */
+.table td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Style Create Booking button */
+.btn-primary {
+    background-color: #ff6600;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #ff4500;
+}
+
+/* Style Edit and Delete buttons */
+.btn-primary, .btn-danger {
+    margin-right: 5px;
+}
+
+/* Style the page header */
+h1 {
+    color: #333;
+}
+
+/* Add some spacing to the page */
+.content {
+    margin: 20px;
+}
+
+/*Booking_form*/
+
+/* Style the page header */
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Style the form */
+form {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+
+form button[type="submit"]:hover {
+    background-color: #ff4500;
+}
+
+/* Style form validation errors */
+.errorlist {
+    color: red;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Add some spacing to the form */
+.content {
+    margin: 20px;
+}
+
+/*Booking_confirm_delete*/
+
+/* Style the page header */
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Style the confirmation message */
+p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* Style the form */
+form {
+    margin-top: 20px;
+}
+
+/* Style the Delete button */
+.btn-danger {
+    background-color: #ff3333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-danger:hover {
+    background-color: #ff0000;
+}
+
+/* Style the Cancel button */
+.btn-secondary {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-secondary:hover {
+    background-color: #000;
+}
+
+/* Add some spacing to the page */
+.content {
+    margin: 20px;
+}
