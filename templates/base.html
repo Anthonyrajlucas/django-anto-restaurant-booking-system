@@ -64,8 +64,17 @@
         <main class="flex-shrink-0 main-bg">
             {% block content %}
             <!-- Content Goes here -->
-            {% endblock content %}>
+            {% endblock content %}
         </main>
+        <div class="container mt-4">
+            {% if messages %}
+                <ul class="messages">
+                    {% for message in messages %}
+                        <li{% if message.tags %} class="btn btn-warning btn-lg{{ message.tags }}"{% endif %}>{{ message }}</li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+        </div>
         <footer class="footer mt-auto py-4 ">
             <p class="m-0 text-center">© Anto-Restaurant 2000</p>
             <p class="m-0 text-center">Follow us:</p>

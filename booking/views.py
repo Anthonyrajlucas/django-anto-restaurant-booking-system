@@ -3,7 +3,10 @@ from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 from django.views.generic import ListView, CreateView, UpdateView, DeleteView
 from .models import Booking
 from .forms import BookingForm
-
+from django.contrib import messages 
+from django.core.mail import send_mail  
+from django.db.models import Sum
+from django.core.exceptions import ValidationError  
 
 
 class BookingListView(LoginRequiredMixin, ListView):
@@ -17,8 +20,25 @@ class BookingCreateView(LoginRequiredMixin, CreateView):
     template_name = 'booking_form.html'
     form_class = BookingForm
     success_url = reverse_lazy('booking-list')
+
     def form_valid(self, form):
         form.instance.created_by = self.request.user
+
+        # Check availability for the selected date
+        selected_date = form.cleaned_data['date']
+        booked_tables = Booking.objects.filter(date=selected_date).aggregate(Sum('total_tables'))['total_tables__sum'] or 0
+
+        if booked_tables + form.instance.total_tables <= 25:
+            form.save()
+            messages.success(self.request, 'Booking successful!')
+            subject = 'New Booking'
+            message = 'A new booking has been made.'
+            from_email = 'anthonyraj.lucas@gmail.com'
+            recipient_list = ['anthonyraj.lucas@gmail.com']
+            send_mail(subject, message, from_email, recipient_list, fail_silently=True)
+        else:
+            messages.error(self.request, 'No tables available for this date')
+   
         return super().form_valid(form)
 
 class BookingUpdateView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
@@ -26,13 +46,19 @@ class BookingUpdateView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
     template_name = 'booking_form.html'
     form_class = BookingForm
     success_url = reverse_lazy('booking-list')
+
     def test_func(self):
         return self.request.user == self.get_object().created_by
 
 class BookingDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
     model = Booking
     template_name = 'booking_confirm_delete.html'
-    success_url = reverse_lazy('booking-list')
+
+    def delete(self, request, *args, **kwargs):
+        messages.success(self.request, 'Booking deleted successfully')
+        return super().delete(request, *args, **kwargs)
+
+    success_url = reverse_lazy('booking-list')  
 
     def test_func(self):
         return self.request.user == self.get_object().created_by
