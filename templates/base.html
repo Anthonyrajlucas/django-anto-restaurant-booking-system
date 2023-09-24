@@ -36,7 +36,7 @@
                             </li>
                             {% if user.is_authenticated %}
                             <li class="nav-item">
-                                <a class="nav-link {% if url_name == 'booking-list' %}active{% endif %}" href="booking/bookings/">Booking</a>
+                                <a class="nav-link {% if url_name == 'booking-list' %}active{% endif %}" href="{% url 'booking-list' %}">Booking</a>
                             </li>
                             {% endif %}
                             {% if user.is_authenticated %}

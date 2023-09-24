@@ -5,7 +5,7 @@ from .models import Booking
 class BookingForm(forms.ModelForm):
     class Meta:
         model = Booking
-        fields = ['date', 'start_time', 'end_time', 'customer_name', 'customer_email']
+        fields = ['customer_name', 'customer_email','date', 'start_time', 'end_time', ]
 
         date = forms.DateField(help_text="Date must be a future date")
         widgets = {"date": forms.widgets.DateInput(attrs={"type": "date"}),
@@ -14,7 +14,7 @@ class BookingForm(forms.ModelForm):
         labels = {
             "customer_name": "Customer Name",
             "customer_email": "Customer Email",
-            "booking_date": "Date",
+            "date": "Booking Date",
             "start_time": "Start Time",
             "end_time": "End Time",
         }
