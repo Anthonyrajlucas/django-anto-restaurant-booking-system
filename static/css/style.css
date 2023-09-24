@@ -90,27 +90,27 @@ footer i:hover {
 
 /*------------------------Contact_us page Style -----------------------------*/
 
-.timetable{
-    background-color: aqua;
-    font-family: 'Roboo',t sans-serif;
+.timetable {
+    background-color: #f2f2f2; 
     border-radius: 10px;
+    padding: 20px; 
 }
+
 .page-title {
-    background-color: #08b4ae;
+    background-color: #ff6600; 
     color: #fff;
     padding: 20px 0;
     text-align: center;
     text-transform: uppercase;
-    
 }
 
 .contact-section {
-    background-color: #fff;
+    background-color: #fff; 
     padding: 30px;
     margin-top: 20px;
     border-radius: 5px;
     text-transform: uppercase;
-    font-family: 'Roboo',t sans-serif;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); 
 }
 
 .contact-info h4 {
@@ -146,23 +146,21 @@ iframe {
 }
 
 
-
 /*--------------------------------Login page style--------------------------*/
-/* Apply styles to the background container */
+
 .background-container {
-    background-color: #08b4ae; /* Set the background color */
+    background-color: #08b4ae; 
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh; /* Make it cover the entire viewport height */
   }
   
-  /* Style the authentication form container */
   .auth-form {
-    background-color: #fff; /* Set the background color for the form */
-    border-radius: 8px; /* Add rounded corners */
+    background-color: #fff; 
+    border-radius: 8px; 
     padding: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a shadow for depth */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
   }
   
@@ -183,16 +181,15 @@ iframe {
     margin-top: 20px;
   }
   
-  /* Style the small text (If you have not created an account yet) */
   small {
     margin-top: 10px;
   }
   
   /* Style the "Sign In" button */
   .primaryAction {
-    background-color: #007bff; /* Set button background color */
-    color: #fff; /* Set button text color */
-    padding: 10px 20px; /* Add padding to the button */
+    background-color: #007bff; 
+    color: #fff; 
+    padding: 10px 20px; 
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -201,7 +198,7 @@ iframe {
   
   /* Hover effect for the button */
   .primaryAction:hover {
-    background-color: #0056b3; /* Change the background color on hover */
+    background-color: #0056b3; 
   }
   
   /*booking_list*/
@@ -254,9 +251,8 @@ h1 {
     margin: 20px;
 }
 
-/*Booking_form*/
+/*----------------------------------Booking_form------------------------------------*/
 
-/* Style the page header */
 h1 {
     font-size: 24px;
     margin-bottom: 20px;
@@ -288,7 +284,7 @@ form button[type="submit"]:hover {
     margin: 20px;
 }
 
-/*Booking_confirm_delete*/
+/*-------------------------------Booking_confirm_delete----------------------------------*/
 
 /* Style the page header */
 h1 {
