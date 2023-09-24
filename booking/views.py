@@ -5,8 +5,9 @@ from .models import Booking
 from .forms import BookingForm
 from django.contrib import messages 
 from django.core.mail import send_mail  
-from django.db.models import Sum
 from django.core.exceptions import ValidationError  
+from django.db.models import Sum
+from django.utils import timezone
 
 
 class BookingListView(LoginRequiredMixin, ListView):
@@ -14,6 +15,7 @@ class BookingListView(LoginRequiredMixin, ListView):
     template_name = 'booking_list.html'
     context_object_name = 'bookings'
     ordering = ['-created_on']
+
 
 class BookingCreateView(LoginRequiredMixin, CreateView):
     model = Booking
@@ -26,9 +28,11 @@ class BookingCreateView(LoginRequiredMixin, CreateView):
 
         # Check availability for the selected date
         selected_date = form.cleaned_data['date']
-        booked_tables = Booking.objects.filter(date=selected_date).aggregate(Sum('total_tables'))['total_tables__sum'] or 0
+        
+        # Calculate the total tables from all bookings on the same day
+        total_tables_on_date = Booking.objects.filter(date=selected_date).aggregate(Sum('total_tables'))['total_tables__sum'] or 0
 
-        if booked_tables + form.instance.total_tables <= 25:
+        if total_tables_on_date + form.instance.total_tables <= 25:
             form.save()
             messages.success(self.request, 'Booking successful!')
             subject = 'New Booking'
@@ -41,6 +45,7 @@ class BookingCreateView(LoginRequiredMixin, CreateView):
    
         return super().form_valid(form)
 
+
 class BookingUpdateView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
     model = Booking
     template_name = 'booking_form.html'
@@ -49,6 +54,11 @@ class BookingUpdateView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
 
     def test_func(self):
         return self.request.user == self.get_object().created_by
+
+    def form_valid(self, form):
+        messages.success(self.request, 'Booking updated successfully!')
+        return super().form_valid(form)
+
 
 class BookingDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
     model = Booking

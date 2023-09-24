@@ -2,6 +2,7 @@ from django.db import models
 from django.contrib.auth.models import User
 from django.db.models import Sum
 
+
 class Booking(models.Model):
     booking_id = models.AutoField(primary_key=True)
     date = models.DateField()
@@ -9,7 +10,7 @@ class Booking(models.Model):
     end_time = models.TimeField()
     customer_name = models.CharField(max_length=255)
     customer_email = models.EmailField()
-    total_tables = models.PositiveIntegerField(default=25)
+    total_tables = models.PositiveIntegerField()
     created_on = models.DateTimeField(auto_now_add=True)
     created_by = models.ForeignKey(User, on_delete=models.CASCADE)
     

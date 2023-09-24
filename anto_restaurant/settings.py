@@ -89,7 +89,7 @@ TEMPLATES = [
         'DIRS': [ TEMPLATES_DIR,
                   os.path.join(BASE_DIR, 'templates', 'account')
                     
-        ],
+                ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -98,7 +98,7 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
             ],
-            'builtins' : [
+            'builtins': [
                   'crispy_forms.templatetags.crispy_forms_tags',
                   'crispy_forms.templatetags.crispy_forms_field'
     ]
