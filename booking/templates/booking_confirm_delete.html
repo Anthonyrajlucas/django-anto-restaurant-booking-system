@@ -2,6 +2,7 @@
 {% load static %}
 
 {% block content %}
+<div class="container"> <!-- Add Bootstrap container here -->
     <h1>Confirm Deletion</h1>
     <p>Are you sure you want to delete booking ID {{ object.booking_id }}?</p>
     <form method="post">
@@ -9,4 +10,5 @@
         <button type="submit" class="btn btn-danger">Delete</button>
         <a href="{% url 'booking-list' %}" class="btn btn-secondary">Cancel</a>
     </form>
+</div> <!-- Close the Bootstrap container -->
 {% endblock %}

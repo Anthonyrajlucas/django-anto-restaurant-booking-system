@@ -4,7 +4,6 @@ from django.views.generic import ListView, CreateView, UpdateView, DeleteView
 from .models import Booking
 from .forms import BookingForm
 from django.contrib import messages 
-from django.core.mail import send_mail  
 from django.core.exceptions import ValidationError  
 from django.db.models import Sum
 from django.utils import timezone
@@ -35,11 +34,6 @@ class BookingCreateView(LoginRequiredMixin, CreateView):
         if total_tables_on_date + form.instance.total_tables <= 25:
             form.save()
             messages.success(self.request, 'Booking successful!')
-            subject = 'New Booking'
-            message = 'A new booking has been made.'
-            from_email = 'anthonyraj.lucas@gmail.com'
-            recipient_list = ['anthonyraj.lucas@gmail.com']
-            send_mail(subject, message, from_email, recipient_list, fail_silently=True)
         else:
             messages.error(self.request, 'No tables available for this date')
    
