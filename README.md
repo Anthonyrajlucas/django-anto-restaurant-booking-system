@@ -174,7 +174,7 @@ All the colors were selected using the hero image to generate color scheme using
 
 For consistency and convenience, I created css root variables that I used throughout the project.
 
-![Colour Scheme-root-variables](static/mccarthysbistro/media/colors_root_variable.png)
+![Colour Scheme-root-variables](media/colors_root_variable.jpg)
 
 #### Fonts
 * The fonts I used for this site were imported from [Google Fonts](https://fonts.google.com/):<br>
@@ -182,7 +182,15 @@ The [Roboto](('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,50
 
 ## Agile Methodology
 
+This project was developed utilising the Agile Methodology.
+This is the first time I used Agile methodology when planning full-stack Django website with a focus on delivering the basic app functionalities. I prioritized features by labelling them as "must-have" or "could-have" These stories helped to define the features and functionalities that were most important to project's target audience.
 
+As a student solo developer who was learning a lot during development, I faced challenges in estimating the time required for each task and only had a basic concept of what I would create. Therefore, I kept things simple and focused on achievable goals. Aiming for Minimum Viable Product, or MVP.
+
+To keep track of progress, I used Github Projects(https://github.com/users/Anthonyrajlucas/projects/4/views/1). I used a kanban board (https://github.com/users/Anthonyrajlucas/projects/4/views/1?layout=board) 
+
+
+By using agile methodology, I was able to stay organized and focused on delivering the most important features, while also allowing flexibility for future development. This experience gave me valuable insight and lessons that I can apply to future projects.
 
 
 
