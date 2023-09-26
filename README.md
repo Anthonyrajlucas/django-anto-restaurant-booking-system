@@ -192,6 +192,10 @@ To keep track of progress, I used Github Projects(https://github.com/users/Antho
 
 By using agile methodology, I was able to stay organized and focused on delivering the most important features, while also allowing flexibility for future development. This experience gave me valuable insight and lessons that I can apply to future projects.
 
+![agile-table](media/agile_table.jpg)
+![agile-board](media/agile_board.jpg)
+
+
 
 
 
