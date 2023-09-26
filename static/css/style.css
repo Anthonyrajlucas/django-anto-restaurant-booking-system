@@ -199,8 +199,7 @@ small {
     background-color: #0056b3;
 }
 
-/*booking_list*/
-
+/* booking_list */
 /* Style the table */
 .table {
     width: 100%;
@@ -228,6 +227,7 @@ small {
     text-decoration: none;
     padding: 10px 20px;
     border: none;
+    margin-top: 10px; /* Add margin to separate the button on mobile */
 }
 
 .btn-primary:hover {
@@ -243,11 +243,19 @@ small {
 /* Style the page header */
 h1 {
     color: #333;
+    margin-top: 20px; /* Add margin to separate the header on mobile */
 }
 
 /* Add some spacing to the page */
 .content {
     margin: 20px;
+}
+
+/* Make the table scroll horizontally on small screens */
+@media (max-width: 768px) {
+    .table {
+        overflow-x: auto;
+    }
 }
 
 /* Booking_form */
