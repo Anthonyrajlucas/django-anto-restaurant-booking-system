@@ -15,7 +15,13 @@ class BookingListView(LoginRequiredMixin, ListView):
     context_object_name = 'bookings'
     ordering = ['-created_on']
 
+    def get_queryset(self):
+        return Booking.objects.filter(created_by=self.request.user)
 
+    def post(self, request, *args, **kwargs):
+        return self.get(request, *args, **kwargs)
+ 
+        
 class BookingCreateView(LoginRequiredMixin, CreateView):
     model = Booking
     template_name = 'booking_form.html'

@@ -41,3 +41,6 @@ This is a project designed and developed to create a complete experience for the
 -	Code
 -	Acknowledgements
 
+ | table | table |
+ | ---| ---|
+

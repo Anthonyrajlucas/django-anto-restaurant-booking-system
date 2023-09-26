@@ -1,4 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
+:root{
+    --cinereous: #8E756E;
+    --field: #50430F;
+    --barn: #691A06;
+    --brown: #C07B58;
+    --black: #3C1205;
+    }
 
 body, html {
    margin: 0;
