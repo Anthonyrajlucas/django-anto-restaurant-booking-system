@@ -207,6 +207,9 @@ After Login user can view booking and logout navbar
 
 ![navbar-2](media/navbar2.jpg)<br><br>
 
+### Home page
+
+
 
 
 
