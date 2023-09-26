@@ -201,11 +201,11 @@ By using agile methodology, I was able to stay organized and focused on deliveri
 
 Bootstrap navbar component was used to create the navigation bar. It is always visible and stays fixed at the top of the screen. The navbar consists of the Restaurant logo and links to the main areas of the site (home, menu, contact pages, Login, and Register). 
 
-![navbar-1]()<br><br>
+![navbar-1](media/navbar1.jpg)<br><br>
 
 After Login user can view booking and logout navbar 
 
-![navbar-2]()<br><br>
+![navbar-2](media/navbar2.jpg)<br><br>
 
 
 
