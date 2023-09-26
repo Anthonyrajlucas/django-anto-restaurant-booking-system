@@ -129,12 +129,15 @@ The structure of the website is divided into seven pages but with content depend
 -**Contact us** contains relevant information visible to all users;
 
 * FLOWCHARTS <br>
-The Flowchart for my program was created using <b>LucidChart</b> and it visually represents how the system works.<br>
+The Flowchart for my program was created using <b>pencil</b> and it visually represents how the system works.<br>
 
 [![N|Solid](media/flowchart.png)](media/flowchart.png)<br>
 
 ### Skeleton<hr>
 **Wireframes**<br>
+
+The wireframes below were created the start of the project building.
+
 The wireframes for mobile and desktop were created with [Balsamiq](https://balsamiq.com/) tool.
 
 **Home Page**
@@ -151,6 +154,22 @@ The wireframes for mobile and desktop were created with [Balsamiq](https://balsa
 
 ![bookings-page-mobile](static/wireframes/booking-wireframe-mobile.png)
 ![bookings-page-desktop](static/wireframes/booking-wireframe-desktop.png)
+
+**Database**<br>
+
+The project uses a cloud-based PostgreSQL database provided by [ElephantSQL](https://www.elephantsql.com/) as a service. ElephantSQL is known for its ease of use, and reliability, and is a popular choice for Django projects that require a PostgreSQL database. It offers a web interface with a console for SQL queries. Database URL including API key is stored as an environment variable in Heroku.
+<br>
+
+<summary>Initial Schema</summary>
+
+The diagram below was created before the actual development of the website which led to some changes to the attributes and tables for finding the most relevant and useful ones to be kept. Due to time constraint, I was not able to make an updated version on time, but I will make sure to update this on future releases.
+
+
+
+
+
+
+
 
 
 
