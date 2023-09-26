@@ -430,11 +430,15 @@ h2 {
         font-size: 16px;
     }
 
-    .Description {
-        font-size: 14px;
+    .meal-container {
+        padding: 10px; 
     }
 
-    /* Reduce the horizontal rule margin */
+    .Description {
+        font-size: 10px;
+        white-space: normal;
+    }
+
     .row p.hr {
         margin: 10px 0;
     }
