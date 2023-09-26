@@ -5,6 +5,7 @@ from .models import Booking
 from .forms import BookingForm
 from django.contrib import messages 
 from django.db.models import Sum
+from django.core.exceptions import ValidationError
 
 
 class BookingListView(LoginRequiredMixin, ListView):
@@ -40,8 +41,10 @@ class BookingCreateView(LoginRequiredMixin, CreateView):
             messages.success(self.request, 'Booking successful!')
         else:
             messages.error(self.request, 'No tables available for this date and time')
-   
-        return super().form_valid(form)
+        try:
+            return super().form_valid(form)
+        except ValidationError:
+            return HttpResponseRedirect(self.request.path)
 
 
 class BookingUpdateView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
