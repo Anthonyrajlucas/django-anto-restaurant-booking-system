@@ -214,6 +214,104 @@ The user is welcomed with an image of one of the restaurant's favorite menu. Dow
 ![homepage](media/home_page.jpg)
 <br><br>
 
+#### Create bookings
+
+Every user that is authenticated can access the *Make aBooking* page for making a reservation. This feature provides a form with multiple input fields that appear successively, as steps in completing the booking.
+
+The inputs are validated after the following rules:
+  - The Date value should not be less than the current day.
+  - Fields cannot be empty.
+  - User must choose total table for booking.
+
+    ![create-booking]()
+
+
+Upon successful booking, a button confirming the reservation appears to give feedback to the user.
+
+  ![create-booking-success]()
+
+  The user wish to edit and delete the booking 
+
+  ![edit-delete-booking]()
+
+#### Menu 
+* On the *Menu* page there is a list with all the menu elements. Every item represents a meal with details such as *Name*, *Image*, *Price*, and *Description*. The list design is simple and attractive.<br>
+
+![menu]()
+
+#### Profiles
+The users' accounts have been created using the **django allauth** module. This way, information about the current user can be accessed from the template and displayed to confirm that the authentication was successful.<br>
+Considering that the website is created for a restaurant, the profile of the user is created to display essential information such as name and email.<br>
+
+![profile]()
+
+### Footer
+
+The footer consists of copyright info and quick navigation to social media links with icons, allowing guests to connect with the brand on popular social media platforms.
+<br><br>
+![footer]()<br>
+
+
+## Responsive Layout and Design
+The project design has been adapted to all types of devices using Bootstrap predefined breakpoints. For intermediate devices where the design didn't fit accordingly, custom breakpoints were used.
+
+**Breakpoints:**
+
+    - max-width:280px
+    - max-width:768px
+    - max-width:992px
+    - max-width:1024px
+
+**Tested devices:**
+
+    - iPhone SE 
+    - iPhone XR 
+    - iPhone 11 
+## Tools Used
+
+[GitHub](https://github.com/) - used for hosting the source code of the program<br>
+[gitpod](https://gitpod.io/workspaces) - for writing and testing the code locally<br>
+[Heroku](https://dashboard.heroku.com/) - used for deploying the project<br>
+[Balsamiq](https://balsamiq.com/wireframes/) - for creating the wireframes<br>
+[Pencil](https://pencil.evolus.vn/Features.html) - used for creating the Flowchart and Database relational schema<br>
+[Favicon.io](https://favicon.io/) - used for generating the website favicon<br>
+[Diffchecker](https://www.diffchecker.com/) - used for comparing the code<br>
+[TinyPNG](https://tinypng.com/) - for compressing the images<br>
+[Grammarly](https://app.grammarly.com/) - for correcting text content<br>
+[Font Awesome](https://fontawesome.com/) - for creating atractive UX with icons<br>
+[Bootstrap5](https://getbootstrap.com/) - for adding predifined styled elements and creating responsiveness<br>
+[Google Fonts](https://fonts.google.com/) - for typography<br>
+[JsHint](https://jshint.com/) - used for validating the javascript code<br>
+[PEP8 Validator](http://pep8online.com/) - used for validating the python code<br>
+[HTML - W3C HTML Validator](https://validator.w3.org/#validate_by_uri+with_options) - used for validating the HTML<br>
+[CSS - Jigsaw CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_uri) - used for validating the CSS<br>
+[Chrome Dev Tools](https://developer.chrome.com/docs/devtools/) - for debugging the project<br>
+[W.A.V.E.](https://wave.webaim.org/) - for testing accessibility<br>
+[Cloudinary](https://cloudinary.com/) - for storing static data<br>
+LightHouse - for testing performance<br>
+
+### Python packages
+
+* django 
+* gunicorn 
+* dj-database-url
+* psycopg2
+* dj3-cloudinary-storage 
+* pylint-django 
+* whitenoise
+* jinja2 
+* django-allauth
+* django-crispy-forms 
+* django-filter
+* pylint 
+* dateutils 
+* black
+
+
+
+
+
+
 
 
 
