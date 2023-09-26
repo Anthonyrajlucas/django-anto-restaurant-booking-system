@@ -166,6 +166,26 @@ The diagram below was created before the actual development of the website which
 
 ![schema-diagram](media/Schema.png)
 
+### Surface<hr>
+#### Color Scheme
+All the colors were selected using the hero image to generate color scheme using coolors (https://coolors.co/generate)
+
+![Colour Scheme](media/colorscheme.jpg)
+
+For consistency and convenience, I created css root variables that I used throughout the project.
+
+![Colour Scheme-root-variables](static/mccarthysbistro/media/colors_root_variable.png)
+
+#### Fonts
+* The fonts I used for this site were imported from [Google Fonts](https://fonts.google.com/):<br>
+The [Roboto](('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');) font is the main font used throughout the whole website with Sans Serif as the fallback. Roboto is a clean, modern looking and well known font. It is sourced from Google fonts and it's linked to css document via @import method.
+
+## Agile Methodology
+
+
+
+
+
 
 
 
