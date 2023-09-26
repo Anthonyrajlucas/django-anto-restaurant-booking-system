@@ -120,18 +120,41 @@ To create a website for Anto-Restaurant that will be beneficial for both clients
 * Create a responsive design for desktop, tablet and mobile devices.<br><br>
 
 ### Structure<hr>
-The structure of the website is divided into seven pages but with content depending on authentication and client/admin status<br>
--**Register/Login** pages give the user the possibility to create an account and authenticate for accessing different features.<br>
--**Logout** feature is a modal that helps user exit their current account;<br>
--The **Home** page is visible for both types of users and includes details about the restaurant, and appropriate links to different pages;<br>
+The structure of the website is divided into seven pages but with content depending on authentication and client/admin status <br>
+-**Register/Login** pages give the user the possibility to create an account and authenticate for accessing different features. <br>
+-**Logout** feature is a modal that helps user exit their current account; <br>
+-The **Home** page is visible for both types of users and includes details about the restaurant, and appropriate links to different pages; <br>
 -The **Menu** page displays menu details and a food description and Category and price <br>
--The **Booking** page is only available for logged-in users, both clients and staff members;<br>
+-The **Booking** page is only available for logged-in users, both clients and staff members; <br>
 -**Contact us** contains relevant information visible to all users;
 
 * FLOWCHARTS <br>
 The Flowchart for my program was created using <b>LucidChart</b> and it visually represents how the system works.<br>
 
 [![N|Solid](media/flowchart.png)](media/flowchart.png)<br>
+
+### Skeleton<hr>
+**Wireframes**<br>
+The wireframes for mobile and desktop were created with [Balsamiq](https://balsamiq.com/) tool.
+
+**Home Page**
+
+![homepage-mobile](static/wireframes/homepage-wireframe-mobile.png)
+![homepage-desktop](static/wireframes/homepage-wireframe-desktop.png)
+
+**Menu Page**
+
+![menu-page-mobile](static/wireframes/menu-wireframe-mobile.png)
+![menu-page-desktop](static/wireframes/menu-wireframe-desktop.png)
+
+**Bookings Page**
+
+![bookings-page-mobile](static/wireframes/booking-wireframe-mobile.png)
+![bookings-page-desktop](static/wireframes/booking-wireframe-desktop.png)
+
+
+
+
 
 
 
