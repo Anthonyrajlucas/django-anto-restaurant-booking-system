@@ -73,8 +73,7 @@ This site was created respecting the Five Planes Of Website Design:<br>
 |                                       |3A| As a logged-in user, I want to be able to find the available tables for a specific date and time|
 |                                       |3B| As a logged-in user, I want to be able to select the table that I want to reserve|
 |**MENU**                               |  ||
-|                                       |4A| As a user, I want to see the restaurant's menu with details about description, category and price, so that I can make an informed decision|
-|                                       
+|                                       |4A| As a user, I want to see the restaurant's menu with details about description, category and price, so that I can make an informed decision|                                  
 |**USER PROFILE**                       |  ||
 |                                       |5A| As a logged-in user, I want to view a list of my upcoming bookings|
 |                                       |5B| As a logged-in user, I want to be able to edit my bookings|
@@ -115,4 +114,19 @@ To create a website for Anto-Restaurant that will be beneficial for both clients
 * Allow admin and staff members to add, update or delete menu items;
 * Allow signed in clients access to Profile page;
 * Allow access to Manage Bookings page only for staff members type of users;
+
+
+**Responsiveness**<br>
+* Create a responsive design for desktop, tablet and mobile devices.<br><br>
+
+### Structure<hr>
+The structure of the website is divided into seven pages but with content depending on authentication and client/admin status<br>
+-**Register/Login** pages give the user the possibility to create an account and authenticate for accessing different features.<br>
+-**Logout** feature is a modal that helps user exit their current account;<br>
+-The **Home** page is visible for both types of users and includes details about the restaurant, and appropriate links to different pages;<br>
+-The **Menu** page displays menu details and a food description and Category and price <br>
+-The **Booking** page is only available for logged-in users, both clients and staff members;<br>
+-**Contact us** contains relevant information visible to all users;
+
+
 
