@@ -209,6 +209,11 @@ After Login user can view booking and logout navbar
 
 ### Home page
 
+The user is welcomed with an image of one of the restaurant's favorite menu. Down the page to be greeted with a welcome message and information about the restaurant. And another image of the restaurant interior is present to entice the user even further. All these design were implemented aiming to meet the project goal of building a simple but intuitive and user friendly application.
+
+![homepage](media/home_page.jpg)
+<br><br>
+
 
 
 
