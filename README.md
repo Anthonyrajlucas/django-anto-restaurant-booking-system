@@ -131,6 +131,8 @@ The structure of the website is divided into seven pages but with content depend
 * FLOWCHARTS <br>
 The Flowchart for my program was created using <b>LucidChart</b> and it visually represents how the system works.<br>
 
+[![N|Solid](media/flowchart.png)](media/flowchart.png)<br>
+
 
 
 
