@@ -1,44 +1,44 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
-:root{
+
+:root {
     --cinereous: #8E756E;
     --field: #50430F;
     --barn: #691A06;
     --brown: #C07B58;
     --black: #3C1205;
-    }
+    --green: #28a745; 
+}
 
 body, html {
-   margin: 0;
-   padding: 0;
-   background-color: #fff;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    font-family: 'Roboto', sans-serif; 
 }
- 
+
 /* Global styles */
 
-body {
-    font-family: 'Roboo',t sans-serif;
-}
-  
 /* Navigation styles */
-
 .navbar {
     background-color: #fff;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100; 
 }
-  
+
 .navbar-brand {
     font-weight: 700;
     font-size: 24px;
     text-transform: uppercase;
 }
-  
+
 .nav-link {
     font-weight: 600;
     text-transform: uppercase;
 }
 
 /* Header styles */
-
 .header-content {
     background-image: url('https://res.cloudinary.com/df8bd97ok/image/upload/v1693832072/hm-soy-sauce-noodles-with-cabbage-mpwf-mediumSquareAt3X_ifmrxo.jpg');
     background-size: cover;
@@ -55,13 +55,12 @@ body {
     font-size: 48px;
     margin-bottom: 20px;
 }
-  
+
 .header-content p {
     font-size: 18px;
 }
 
 /* Main content styles */
-
 .main-content {
     background-color: #fff;
     padding: 40px;
@@ -69,24 +68,24 @@ body {
     text-transform: uppercase;
 }
 
-/* --------------------Footer----------------------- */
-
-footer{
+/* Footer styles */
+footer {
     flex-shrink: 0;
     text-transform: uppercase;
-   
-}
-.footer {
-    z-index: 1;
     background-color: #fff;
     color: #3a3a3a;
+    padding: 20px 0;
+    text-align: center;
 }
+
 footer a {
     color: var(--green);
+    text-decoration: none;
 }
 
 footer a:hover {
     color: #3a3a3a;
+    transition: color 0.3s;
 }
 
 footer i:hover {
@@ -95,16 +94,15 @@ footer i:hover {
     color: #3a3a3a;
 }
 
-/*------------------------Contact_us page Style -----------------------------*/
-
+/* Contact_us page styles */
 .timetable {
-    background-color: #f2f2f2; 
+    background-color: #f2f2f2;
     border-radius: 10px;
-    padding: 20px; 
+    padding: 20px;
 }
 
 .page-title {
-    background-color: #ff6600; 
+    background-color: var(--green);
     color: #fff;
     padding: 20px 0;
     text-align: center;
@@ -112,16 +110,16 @@ footer i:hover {
 }
 
 .contact-section {
-    background-color: #fff; 
+    background-color: #fff;
     padding: 30px;
     margin-top: 20px;
     border-radius: 5px;
     text-transform: uppercase;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
 .contact-info h4 {
-    color: #007bff;
+    color: var(--green);
 }
 
 .contact-info p {
@@ -138,11 +136,11 @@ footer i:hover {
 }
 
 .opening-hours h4 {
-    color: #007bff;
+    color: var(--green);
 }
 
 .directions h4 {
-    color: #007bff;
+    color: var(--green);
 }
 
 iframe {
@@ -152,65 +150,58 @@ iframe {
     border-radius: 10px;
 }
 
-
-/*--------------------------------Login page style--------------------------*/
-
+/* Login page style */
 .background-container {
-    background-color: #08b4ae; 
+    background-color: #08b4ae;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Make it cover the entire viewport height */
-  }
-  
-  .auth-form {
-    background-color: #fff; 
-    border-radius: 8px; 
+    min-height: 100vh; 
+}
+
+.auth-form {
+    background-color: #fff;
+    border-radius: 8px;
     padding: 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
-  }
-  
-  /* Style the header (Sign In) */
-  .decorated {
+}
+
+.decorated {
     font-size: 24px;
     margin-bottom: 20px;
-  }
-  
-  /* Style the link to the signup page */
-  .authenticate-link {
-    color: #007bff; /* Set link color */
+}
+
+.authenticate-link {
+    color: var(--green);
     text-decoration: none;
-  }
-  
-  /* Style the form inputs */
-  .input-container {
+}
+
+.input-container {
     margin-top: 20px;
-  }
-  
-  small {
+}
+
+small {
     margin-top: 10px;
-  }
-  
-  /* Style the "Sign In" button */
-  .primaryAction {
-    background-color: #007bff; 
-    color: #fff; 
-    padding: 10px 20px; 
+}
+
+.primaryAction {
+    background-color: var(--green);
+    color: #fff;
+    padding: 10px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    transition: background-color 0.3s ease; /* Add a smooth transition effect */
-  }
-  
-  /* Hover effect for the button */
-  .primaryAction:hover {
-    background-color: #0056b3; 
-  }
-  
-  /*booking_list*/
+    transition: background-color 0.3s ease;
+}
 
-  /* Style the table */
+.primaryAction:hover {
+    background-color: #0056b3;
+}
+
+/*booking_list*/
+
+/* Style the table */
 .table {
     width: 100%;
     border-collapse: collapse;
@@ -232,7 +223,7 @@ iframe {
 
 /* Style Create Booking button */
 .btn-primary {
-    background-color: #ff6600;
+    background-color: var(--green);
     color: #fff;
     text-decoration: none;
     padding: 10px 20px;
@@ -244,7 +235,8 @@ iframe {
 }
 
 /* Style Edit and Delete buttons */
-.btn-primary, .btn-danger {
+.btn-primary,
+.btn-danger {
     margin-right: 5px;
 }
 
@@ -258,25 +250,7 @@ h1 {
     margin: 20px;
 }
 
-/*----------------------------------Booking_form------------------------------------*/
-
-h1 {
-    font-size: 24px;
-    margin-bottom: 20px;
-    color: #333;
-}
-
-/* Style the form */
-form {
-    background-color: #f2f2f2;
-    padding: 20px;
-    border-radius: 5px;
-}
-
-
-form button[type="submit"]:hover {
-    background-color: #ff4500;
-}
+/* Booking_form */
 
 /* Style form validation errors */
 .errorlist {
@@ -286,29 +260,12 @@ form button[type="submit"]:hover {
     list-style: none;
 }
 
-/* Add some spacing to the form */
-.content {
-    margin: 20px;
-}
-
-/*-------------------------------Booking_confirm_delete----------------------------------*/
-
-/* Style the page header */
-h1 {
-    font-size: 24px;
-    margin-bottom: 20px;
-    color: #333;
-}
+/* Booking_confirm_delete */
 
 /* Style the confirmation message */
 p {
     font-size: 16px;
     margin-bottom: 20px;
-}
-
-/* Style the form */
-form {
-    margin-top: 20px;
 }
 
 /* Style the Delete button */
@@ -339,25 +296,20 @@ form {
     background-color: #000;
 }
 
-/* Add some spacing to the page */
-.content {
-    margin: 20px;
-}
-
-/*-------------------------------menu_list--------------------------*/
+/* menu_list */
 
 /* Container styles */
 .container {
-    max-width: 100%; /* Ensure the container doesn't exceed the viewport width */
+    max-width: 100%;
     padding: 20px;
-    overflow-x: hidden; /* Hide horizontal overflow */
+    overflow-x: hidden;
 }
 
 .background-container {
     background-color: #f5f5f5;
     padding: 20px;
     border-radius: 10px;
-    overflow: hidden; /* Hide vertical overflow */
+    overflow: hidden;
 }
 
 .center-container {
@@ -373,14 +325,14 @@ h2 {
 /* Authentication link styles */
 .authenticate-link {
     text-decoration: none;
-    color: #007bff;
+    color: var(--green);
 }
 
 /* Menu list styles */
 .menu-list {
-    max-height: 80vh; /* Limit the maximum height to 80% of the viewport height */
-    overflow-y: auto; /* Add vertical scrollbar if content overflows */
-    overflow-x: hidden; /* Hide horizontal overflow */
+    max-height: 80vh;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 /* Menu item styles */
@@ -393,10 +345,10 @@ h2 {
 }
 
 .dish img {
-    max-width: 100%; /* Adjust image size to fit container width */
+    max-width: 100%;
     height: auto;
     display: block;
-    margin: 0 auto; /* Center the image */
+    margin: 0 auto;
 }
 
 .meal-container {
@@ -411,7 +363,7 @@ h2 {
 
 .price {
     font-size: 18px;
-    color: #28a745;
+    color: var(--green);
     margin: 0;
 }
 
