@@ -82,9 +82,9 @@ This site was created respecting the Five Planes Of Website Design:<br>
 |                                       |6A| As a logged-in admin member, I want to see the restaurant's upcoming bookings for the current day sorted by time|
 |                                       |6B| As a logged-in admin member, I want to be able to filter bookings by date|
 |**CONTACT**                            |  ||
-|                                       |8A| As a user, I want to see the restaurant's opening and closing hours|
-|                                       |8B| As a user, I want to see location information on the website|
-|                                       |8C| As a user, I want to see contact information on the website|
+|                                       |7A| As a user, I want to see the restaurant's opening and closing hours|
+|                                       |7B| As a user, I want to see location information on the website|
+|                                       |7C| As a user, I want to see contact information on the website|
 
 **Project Goal:**<br>
 To create a website for Anto-Restaurant that will be beneficial for both clients and staff members which aims to maximise clients/customers experience and staff productivity, ultimately maximising the restaurant's revenue and customer satisfaction
@@ -127,6 +127,10 @@ The structure of the website is divided into seven pages but with content depend
 -The **Menu** page displays menu details and a food description and Category and price <br>
 -The **Booking** page is only available for logged-in users, both clients and staff members;<br>
 -**Contact us** contains relevant information visible to all users;
+
+* FLOWCHARTS <br>
+The Flowchart for my program was created using <b>LucidChart</b> and it visually represents how the system works.<br>
+
 
 
 
