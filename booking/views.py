@@ -4,9 +4,7 @@ from django.views.generic import ListView, CreateView, UpdateView, DeleteView
 from .models import Booking
 from .forms import BookingForm
 from django.contrib import messages 
-from django.core.exceptions import ValidationError  
 from django.db.models import Sum
-from django.utils import timezone
 
 
 class BookingListView(LoginRequiredMixin, ListView):
@@ -20,8 +18,8 @@ class BookingListView(LoginRequiredMixin, ListView):
 
     def post(self, request, *args, **kwargs):
         return self.get(request, *args, **kwargs)
- 
-        
+
+
 class BookingCreateView(LoginRequiredMixin, CreateView):
     model = Booking
     template_name = 'booking_form.html'
@@ -31,17 +29,17 @@ class BookingCreateView(LoginRequiredMixin, CreateView):
     def form_valid(self, form):
         form.instance.created_by = self.request.user
 
-        # Check availability for the selected date
+        # Check availability for the selected date and time
         selected_date = form.cleaned_data['date']
-        
-        # Calculate the total tables from all bookings on the same day
-        total_tables_on_date = Booking.objects.filter(date=selected_date).aggregate(Sum('total_tables'))['total_tables__sum'] or 0
+        selected_time = form.cleaned_data['booking_time']
 
-        if total_tables_on_date + form.instance.total_tables <= 25:
+        total_tables_on_datetime = Booking.objects.filter(date=selected_date, booking_time=selected_time).aggregate(Sum('total_tables'))['total_tables__sum'] or 0
+
+        if total_tables_on_datetime + form.instance.total_tables <= 25:
             form.save()
             messages.success(self.request, 'Booking successful!')
         else:
-            messages.error(self.request, 'No tables available for this date')
+            messages.error(self.request, 'No tables available for this date and time')
    
         return super().form_valid(form)
 

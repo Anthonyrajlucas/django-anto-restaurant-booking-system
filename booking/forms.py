@@ -4,11 +4,10 @@ from django.core.exceptions import ValidationError
 from django.utils import timezone
 from datetime import datetime
 
-
 class BookingForm(forms.ModelForm):
     class Meta:
         model = Booking
-        fields = ['customer_name', 'customer_email', 'date', 'start_time', 'end_time', 'total_tables']
+        fields = ['customer_name', 'customer_email', 'date', 'booking_time', 'total_tables']
 
     def clean(self):
         cleaned_data = super().clean()
@@ -16,19 +15,15 @@ class BookingForm(forms.ModelForm):
         if date and date < timezone.now().date():
             raise ValidationError("Date must be a future date")
 
+        booking_time = cleaned_data.get("booking_time")
+        if date == timezone.now().date() and booking_time:
+            current_time = datetime.now().time().strftime("%H:%M")
+            if booking_time < current_time:
+                raise ValidationError("Booking time cannot be in the past for today's date")
+
         if not self.instance.is_table_available():
-            raise ValidationError("No tables available for this date")
+            raise ValidationError("No tables available for this date and time")
 
-        start_time = cleaned_data.get("start_time")
-        end_time = cleaned_data.get("end_time")
-
-        # Define the allowed time range from 10:00 AM to 10:00 PM
-        allowed_start_time = datetime.strptime("10:00 AM", "%I:%M %p").time()
-        allowed_end_time = datetime.strptime("10:00 PM", "%I:%M %p").time()
-
-        if start_time and end_time and (start_time < allowed_start_time or end_time > allowed_end_time):
-            raise ValidationError("Start and End time should be between 10:00 AM and 10:00 PM")
-        
         total_tables = cleaned_data.get("total_tables")
         if total_tables and total_tables > 25:
             raise ValidationError("Total tables cannot exceed 25")
@@ -37,20 +32,18 @@ class BookingForm(forms.ModelForm):
         help_text="Date must be a future date",
         widget=forms.widgets.DateInput(attrs={"type": "date"}),
     )
-    start_time = forms.TimeField(
-        help_text="Start time should be after 10:00 AM",
-        widget=forms.TimeInput(attrs={'type': 'time'}),
-    )
-    end_time = forms.TimeField(
-        help_text="End time should be before 10:00 PM",
-        widget=forms.TimeInput(attrs={'type': 'time'}),
+    booking_time = forms.ChoiceField(
+        choices=[("10:00", "10:00 AM"), ("11:00", "11:00 AM"), ("12:00", "12:00 PM"),
+                 ("13:00", "01:00 PM"), ("14:00", "02:00 PM"), ("15:00", "03:00 PM"),
+                 ("16:00", "04:00 PM"), ("17:00", "05:00 PM"), ("18:00", "06:00 PM"),
+                 ("19:00", "07:00 PM"), ("20:00", "08:00 PM"), ("21:00", "09:00 PM"),
+                 ("22:00", "10:00 PM")],
     )
 
     labels = {
         "customer_name": "Customer Name",
         "customer_email": "Customer Email",
         "date": "Date",
-        "start_time": "Start Time",
-        "end_time": "End Time",
+        "booking_time": "Booking Time",
         "total_tables": "Total table size"
     }

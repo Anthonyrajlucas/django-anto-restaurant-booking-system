@@ -2,12 +2,28 @@ from django.db import models
 from django.contrib.auth.models import User
 from django.db.models import Sum
 
-
 class Booking(models.Model):
     booking_id = models.AutoField(primary_key=True)
     date = models.DateField()
-    start_time = models.TimeField()
-    end_time = models.TimeField()
+    booking_time = models.CharField(
+        max_length=5,
+        choices=[
+            ("10:00", "10:00 AM"),
+            ("11:00", "11:00 AM"),
+            ("12:00", "12:00 PM"),
+            ("13:00", "01:00 PM"),
+            ("14:00", "02:00 PM"),
+            ("15:00", "03:00 PM"),
+            ("16:00", "04:00 PM"),
+            ("17:00", "05:00 PM"),
+            ("18:00", "06:00 PM"),
+            ("19:00", "07:00 PM"),
+            ("20:00", "08:00 PM"),
+            ("21:00", "09:00 PM"),
+            ("22:00", "10:00 PM"),
+        ],
+        default="10:00"  # Set the default value to "10:00"
+    )
     customer_name = models.CharField(max_length=255)
     customer_email = models.EmailField()
     total_tables = models.PositiveIntegerField()
@@ -15,14 +31,14 @@ class Booking(models.Model):
     created_by = models.ForeignKey(User, on_delete=models.CASCADE)
     
     def is_table_available(self):
-        booked_tables = Booking.objects.filter(date=self.date).aggregate(Sum('total_tables'))['total_tables__sum'] or 0
+        booked_tables = Booking.objects.filter(date=self.date, booking_time=self.booking_time).aggregate(Sum('total_tables'))['total_tables__sum'] or 0
         return booked_tables < 25
 
     def save(self, *args, **kwargs):
         if not self.booking_id: 
             if not self.is_table_available():
-                raise Exception("No tables available for this date")
+                raise Exception("No tables available for this date and time")
         super().save(*args, **kwargs)
 
     def __str__(self):
-        return f"Booking ID: {self.booking_id}, Date: {self.date}"
+        return f"Booking ID: {self.booking_id}, Date: {self.date}, Time: {self.booking_time}"
