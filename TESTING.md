@@ -159,6 +159,61 @@ By testing all these features, it can be affirmed that the user story is accompl
     *By testing all these features, it can be affirmed that the user story is accomplished.*<br> 
 * **Outcome:** Pass
 
+### Aditional Manual Testing
+  
+#### Interface Interaction
+
+* Ensure all interactive elements respond appropriately:
+    - **Desktop:**
+        - All navbar elements correctly respond to hovering.
+        - All buttons correctly respond to hovering.
+        - All authentication links correctly respond to hovering
+    - **Mobile:**
+        - All navbar elements correctly respond to touch.
+        - All buttons correctly respond to touch.
+        - All authentication links correctly respond to touch
+
+#### Links
+
+* Ensure the external links to social media present in the footer open up in new tabs.
+
+## Functionality testing
+
+Comprehensive testing has been conducted to ensure that all website functionalities are working as intended, providing users with a reliable and enjoyable browsing experience.
+
+| Functionality | What's being tested | Result |
+|------|-------------|--------|
+| Registration | A new user can create an account successfully. | Pass |
+|  | The website displays an appropriate error message with hint when validation fails. | Pass |
+|  | The website displays an appropriate message if link is invalid or token expired | Pass |
+|  | User is signed in automatically when click confirm button | Pass |
+| Admin Panel | Admin can login to admin panel. | Pass |
+|  | Admin can add, edit and delete bookings. | Pass |
+|  | Admin can add edit and delete menu items. | Pass |
+|  | Admin can add and delete tables. | Pass |
+|  | Admin can delete users. | Pass|
+|  | Admin panel can be accessed by user| Pass |
+|Login | A registered user can log in successfully. | Pass |
+|  | The website displays an appropriate error message when a user enters an incorrect email or password. | Pass |
+|  | A logged-in user can sign out successfully. | Pass |
+|  | The website displays an appropriate error message when a user enters invalid data (e.g., date before current day, not allowed charset). | Pass |
+|  | A user cannot edit or delete another user's profile | Pass |
+|Bookings CRUD | Verify that a logged-in user can create, edit delete his own bookings. | Pass |
+|  | Confirmation message is displayed when changes are saved | Pass |
+|  | User is asked for confirmation before deleting booking| Pass |
+|  | Click on delete confirmation button deletes bookings | Pass |
+|  | A user can delete own bookings | Pass |
+|  | Only authenticated users can book reservations | Pass |
+|  | Confirmation message is displayed when booking is updated or deleted | Pass |
+|Menu| A logged-in admin can add, edit or delete menu items. | Pass |
+
+## Code Validation
+### HTML
+
+The html code of the website was validated using [W3 Markup Validator](https://validator.w3.org/).<br>
+
+
+
 
 
 
