@@ -1,7 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
 {% block content %}
-
 <div class="container">
     <div class="background-container review-page">
         <div class="center-container">
@@ -10,7 +9,7 @@
                 <h2 class="a-center"><strong>****** Menu *******</strong></h2>
                 {% if not user.is_authenticated %}
                 <div class="menu-page">
-                    <p class="menu-p">If you would like to book a table,
+                    <p class="menu-p">If you would like to let us know of any dietary requirements or food allergies,
                         please <span><a class="authenticate-link" href="{% url 'account_login' %}"><b>LOGIN</b></a> / <a
                                 class="authenticate-link" href="{% url 'account_signup' %}"><b>REGISTER</b></a></span></p>
                 </div>
@@ -31,7 +30,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <p class="description"><b>Description:</b> {{ meal.description }}</p>
+                                <p class="description truncate-text">{{ meal.description }}</p>
                             </div>
                             <div class="row">
                                 <p class="description"><b>Category:</b> {{ meal.category }}</p>

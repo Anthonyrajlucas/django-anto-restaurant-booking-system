@@ -345,6 +345,7 @@ h2 {
 }
 
 /* Menu item styles */
+
 .meal {
     margin: 20px 0;
     background-color: #fff;
@@ -377,10 +378,12 @@ h2 {
 }
 
 .description {
+    white-space: normal;
     font-size: 16px;
     margin: 10px 0;
-    padding: 20px;
+    padding: 10px;
 }
+
 
 /* Horizontal rule style */
 .row p.hr {
@@ -436,9 +439,9 @@ h2 {
     }
 
     .description {
-        font-size: 10px;
-        white-space: normal;
-        padding: 20px;
+        font-size: 14px;
+        padding: 10px;
+        white-space: pre-line;
     }
 
     .row p.hr {
