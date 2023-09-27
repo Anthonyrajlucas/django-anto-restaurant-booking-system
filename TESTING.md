@@ -285,30 +285,22 @@ The python code was tested using [PEP8ci](https://pep8ci.herokuapp.com/) validat
 <summary>Contact Page</summary>
 
 * **urls.py**<br>
-![pep8-validation]()
+![pep8-validation](media/contact_urls.py.jpg)
 
 * **views.py**<br>
-![pep8-validation]()
+![pep8-validation](media/contact_views.py.jpg)
 </details>
 <details>
 <summary>Home Page</summary>
 
-* **admin.py**<br>
-![pep8-validation](docs/img/validations)
 * **apps.py**<br>
-
-![pep8-validation](docs/img/validations)
-* **forms.py**<br>
-![pep8-validation](docs/img/validations)
-
-* **models.py**<br>
-![pep8-validation](docs/img/validations/home)
+![pep8-validation]()
 
 * **urls.py**<br>
-![pep8-validation](docs/img/validations)
+![pep8-validation]()
 
 * **views.py**<br>
-![pep8-validation](docs/img/validations)
+![pep8-validation]()
 </details>
 <details>
 <summary>Menu Page</summary>
