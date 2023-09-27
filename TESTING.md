@@ -212,6 +212,36 @@ Comprehensive testing has been conducted to ensure that all website functionalit
 
 The html code of the website was validated using [W3 Markup Validator](https://validator.w3.org/).<br>
 
+For pages that require authentication, I used the "validate by direct input" method with source code.<br>
+At the time of deployment the validation have the following outcome:<br><br>
+
+
+![html-validation](media/)
+
+
+
+
+The following pages have been tested by direct input:
+* Home
+* Menu
+* booking
+* contactus
+* Manage bookings
+* Login/Register/Logout
+
+| Template | Validation Result |  Final validation
+|--------|-----------|---------|
+| base.html | no errors | pass|
+| menu.html | no errors | pass |
+| booking.html | no errors | pass |
+| contact.html | no errors | pass|
+| signup.html | no errors | pass |
+| logout.html | no errors | pass |
+| login.html | no errors | pass |
+
+
+
+
 
 ### CSS
 
