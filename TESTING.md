@@ -213,6 +213,15 @@ Comprehensive testing has been conducted to ensure that all website functionalit
 The html code of the website was validated using [W3 Markup Validator](https://validator.w3.org/).<br>
 
 
+### CSS
+
+The CSS code was validated using [W3 Jigsaw Validator](https://jigsaw.w3.org/css-validator/)<br>
+At the time of deployment the validation for *style.css* has the following outcome:<br><br>
+
+
+![css-validation](media/W3C-css-validation.jpg)
+
+
 
 
 
