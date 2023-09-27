@@ -472,6 +472,40 @@ For creating a clone of the repository on your local machine, use<b>Clone</b>:
 - Your clone was created
 <hr>
 
+## Credits
+
+- Code Institute [Code Institute course and learning platform](https://codeinstitute.net/) specifically "I Think Therefore I Blog" and "To Do App"
+
+- I use this website to resize my images: (https://picresize.com/)
+- W3schools (https://www.w3schools.com/)
+- Black - Black is a PEP8-compliant opinionated formatter. Used to format code.
+
+## Media
+
+Images used on the project are taken from here:
+- pexels.com
+- cloudinary 
+
+
+## Learning resources
+
+- [Code Institute course and learning platform](https://codeinstitute.net/)
+- [The book "Python Crash Course, 2nd Edition: A Hands-On, Project-Based Introduction To Programming"](https://nostarch.com/pythoncrashcourse2e)
+- [Slack](https://codeinstitute.net/de//)
+- [W3Schools](https://www.w3schools.com/python/default.asp)
+- [Django](https://www.djangoproject.com/) - Django documentation.
+- [Bootstrap](https://blog.getbootstrap.com/2022/11/22/bootstrap-5-2-3/) - Bootstrap documentation.
+- Documentation of python modules and libraries used in the project.
+
+## Acknowledgements
+
+- My mentor Derek McAuley for helpful feedback and guidance at all stages of the project.
+- Code Institute Slack Community for being invaluable knowledge base.
+
+## Disclaimer
+
+- McCarthy's Bistro Website was created for educational purpose only.
+
 
 
 
