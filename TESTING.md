@@ -294,13 +294,13 @@ The python code was tested using [PEP8ci](https://pep8ci.herokuapp.com/) validat
 <summary>Home Page</summary>
 
 * **apps.py**<br>
-![pep8-validation]()
+![pep8-validation](media/home_apps.py.jpg)
 
 * **urls.py**<br>
-![pep8-validation]()
+![pep8-validation](media/home_urls.py.jpg)
 
 * **views.py**<br>
-![pep8-validation]()
+![pep8-validation](media/home_views.py.jpg)
 </details>
 <details>
 <summary>Menu Page</summary>
