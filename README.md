@@ -504,7 +504,7 @@ Images used on the project are taken from here:
 
 ## Disclaimer
 
-- McCarthy's Bistro Website was created for educational purpose only.
+- Anto-Restaurant-Booking-System Website was created for educational purposes only.
 
 
 
