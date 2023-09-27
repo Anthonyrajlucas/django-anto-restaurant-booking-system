@@ -307,19 +307,19 @@ The python code was tested using [PEP8ci](https://pep8ci.herokuapp.com/) validat
 <summary>Menu Page</summary>
 
 * **admin.py**<br>
-![pep8-validation]()
+![pep8-validation](media/menu_admin.py.jpg)
 
 * **forms.py**<br>
-![pep8-validation]()
+![pep8-validation](media/menu_forms.py.jpg)
 
 * **models.py**<br>
-![pep8-validation]()
+![pep8-validation](media/menu_models.py.jpg)
 
 * **urls.py**<br>
-![pep8-validation]()
+![pep8-validation](media/menu_urls.py.jpg)
 
 * **views.py**<br>
-![pep8-validation]()
+![pep8-validation](media/menu_views.py.jpg)
 
 </details>
 
