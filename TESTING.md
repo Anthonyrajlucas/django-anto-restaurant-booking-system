@@ -239,10 +239,6 @@ The following pages have been tested by direct input:
 | logout.html | no errors | pass |
 | login.html | no errors | pass |
 
-
-
-
-
 ### CSS
 
 The CSS code was validated using [W3 Jigsaw Validator](https://jigsaw.w3.org/css-validator/)<br>
@@ -250,6 +246,21 @@ At the time of deployment the validation for *style.css* has the following outco
 
 
 ![css-validation](media/W3C-css-validation.jpg)
+
+### Python
+The python code was tested using [PEP8ci](https://pep8ci.herokuapp.com/) validator.<br>
+
+**Pep8 results:**<br>
+
+<details>
+<summary>Main app</summary>
+
+* **settings.py**<br>
+![pep8-validation](media/main_settings.py.jpg)
+
+* **urls.py**<br>
+![pep8-validation](media/main_urls.py.jpg)
+</details>
 
 
 
