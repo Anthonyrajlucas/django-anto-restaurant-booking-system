@@ -376,10 +376,10 @@ h2 {
     margin: 0;
 }
 
-.Description {
+.description {
     font-size: 16px;
-    color: #555;
     margin: 10px 0;
+    padding: 20px;
 }
 
 /* Horizontal rule style */
@@ -435,9 +435,10 @@ h2 {
         padding: 10px; 
     }
 
-    .Description {
+    .description {
         font-size: 10px;
         white-space: normal;
+        padding: 20px;
     }
 
     .row p.hr {
