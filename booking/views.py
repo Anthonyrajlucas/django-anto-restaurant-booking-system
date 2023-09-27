@@ -3,7 +3,7 @@ from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 from django.views.generic import ListView, CreateView, UpdateView, DeleteView
 from .models import Booking
 from .forms import BookingForm
-from django.contrib import messages 
+from django.contrib import messages
 from django.db.models import Sum
 from django.core.exceptions import ValidationError
 
@@ -69,7 +69,7 @@ class BookingDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
         messages.success(self.request, 'Booking deleted successfully')
         return super().delete(request, *args, **kwargs)
 
-    success_url = reverse_lazy('booking-list')  
+    success_url = reverse_lazy('booking-list')
 
     def test_func(self):
         return self.request.user == self.get_object().created_by

@@ -30,19 +30,18 @@ class Booking(models.Model):
     total_tables = models.PositiveIntegerField()
     created_on = models.DateTimeField(auto_now_add=True)
     created_by = models.ForeignKey(User, on_delete=models.CASCADE)
-    
+
     def is_table_available(self):
         # Calculate the total tables booked for the selected date and time
         booked_tables = Booking.objects.filter(date=self.date, booking_time=self.booking_time).aggregate(Sum('total_tables'))['total_tables__sum'] or 0
-        
+
         # If the current booking is being updated, subtract its total_tables
         if self.booking_id:
             booked_tables -= self.total_tables
-        
         return booked_tables < 25
 
     def save(self, *args, **kwargs):
-        if not self.booking_id: 
+        if not self.booking_id:
             if not self.is_table_available():
                 raise Exception("No tables available for this date and time")
         super().save(*args, **kwargs)
