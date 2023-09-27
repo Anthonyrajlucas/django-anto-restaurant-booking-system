@@ -323,6 +323,39 @@ The python code was tested using [PEP8ci](https://pep8ci.herokuapp.com/) validat
 
 </details>
 
+### Performance
+The performance of the website was tested with Lighthouse
+
+**Lighthouse reports:**<br>
+
+<details>
+<summary>Desktop</summary>
+
+* Home page<br>
+![lighthouse-home]()<br>
+
+* Menu page<br>
+![lighthouse-menu]()<br>
+
+* Contact page<br>
+![lighthouse-contact]()<br>
+
+* Bookings page<br>
+![lighthouse-bookings]()<br>
+
+* Register page<br>
+![lighthouse-register]()<br>
+
+* Login page<br>
+![lighthouse-profile]()<br>
+
+</details>
+
+
+## Bugs 
+
+
+Back to [README.md](README.md)<br>
 
 
 
