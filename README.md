@@ -223,16 +223,17 @@ The inputs are validated after the following rules:
   - Fields cannot be empty.
   - User must choose total table for booking.
 
-    ![create-booking]()
+    ![create-booking](media/create-booking.jpg)
 
 
 Upon successful booking, a button confirming the reservation appears to give feedback to the user.
 
-  ![create-booking-success]()
+  ![create-booking-success](media/create-booking-success.jpg)
 
   The user wish to edit and delete the booking 
 
-  ![edit-delete-booking]()
+  ![edit-booking](media/edit-booking.jpg)
+  ![delete-booking](media/delete-booking.jpg)
 
 #### Menu 
 * On the *Menu* page there is a list with all the menu elements. Every item represents a meal with details such as *Name*, *Image*, *Price*, and *Description*. The list design is simple and attractive.<br>
