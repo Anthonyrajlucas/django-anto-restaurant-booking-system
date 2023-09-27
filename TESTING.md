@@ -332,22 +332,22 @@ The performance of the website was tested with Lighthouse
 <summary>Desktop</summary>
 
 * Home page<br>
-![lighthouse-home]()<br>
+![lighthouse-home](media/lighthouse_home.jpg)<br>
 
 * Menu page<br>
-![lighthouse-menu]()<br>
+![lighthouse-menu](media/lighthouse_menu.jpg)<br>
 
 * Contact page<br>
-![lighthouse-contact]()<br>
+![lighthouse-contact](media/lighthouse_contact.jpg)<br>
 
 * Bookings page<br>
-![lighthouse-bookings]()<br>
+![lighthouse-bookings](media/lighthouse_booking.jpg)<br>
 
 * Register page<br>
-![lighthouse-register]()<br>
+![lighthouse-register](media/lighthouse_register.jpg)<br>
 
 * Login page<br>
-![lighthouse-profile]()<br>
+![lighthouse-profile](media/lighthouse_login.jpg)<br>
 
 </details>
 
