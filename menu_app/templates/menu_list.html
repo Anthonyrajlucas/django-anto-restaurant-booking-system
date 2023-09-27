@@ -9,13 +9,13 @@
                 <h2 class="a-center"><strong>****** Menu *******</strong></h2>
                 {% if not user.is_authenticated %}
                 <div class="menu-page">
-                    <p class="menu-p">If you would like to let us know of any dietary requirements or food allergies,
+                    <p class="menu-p">If you would like to book a table,
                         please <span><a class="authenticate-link" href="{% url 'account_login' %}"><b>LOGIN</b></a> / <a
                                 class="authenticate-link" href="{% url 'account_signup' %}"><b>REGISTER</b></a></span></p>
                 </div>
                 {% endif %}
                 <br>
-                <div class="menu-list">
+                <div class="menu-list" style="overflow-x: scroll; overflow-y: scroll; max-height: 400px; max-width: 800px;">
                     {% for meal in object_list %}
                     <!-- Menu item container -->
                     <div class="meal">
@@ -30,7 +30,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <p class="description truncate-text">{{ meal.description }}</p>
+                                <p class="description small d-none d-sm-block">{{ meal.description }}</p> 
                             </div>
                             <div class="row">
                                 <p class="description"><b>Category:</b> {{ meal.category }}</p>
