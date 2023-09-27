@@ -237,19 +237,20 @@ Upon successful booking, a button confirming the reservation appears to give fee
 #### Menu 
 * On the *Menu* page there is a list with all the menu elements. Every item represents a meal with details such as *Name*, *Image*, *Price*, and *Description*. The list design is simple and attractive.<br>
 
-![menu]()
+![menu](media/menu.jpg)
 
 #### Profiles
 The users' accounts have been created using the **django allauth** module. This way, information about the current user can be accessed from the template and displayed to confirm that the authentication was successful.<br>
 Considering that the website is created for a restaurant, the profile of the user is created to display essential information such as name and email.<br>
 
-![profile]()
+![profile](media/profilelogin.jpg)
+![profiel-login-success-msg](media/profile-login-success-msg.jpg)
 
 ### Footer
 
 The footer consists of copyright info and quick navigation to social media links with icons, allowing guests to connect with the brand on popular social media platforms.
 <br><br>
-![footer]()<br>
+![footer](media/footer.jpg)<br>
 
 
 ## Responsive Layout and Design
