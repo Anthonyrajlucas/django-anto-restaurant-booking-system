@@ -280,12 +280,38 @@ The python code was tested using [PEP8ci](https://pep8ci.herokuapp.com/) validat
 * **views.py**<br>
 ![pep8-validation](media/booking_views.py.jpg)
 </details>
+
 <details>
 <summary>Contact Page</summary>
 
+* **urls.py**<br>
+![pep8-validation]()
 
+* **views.py**<br>
+![pep8-validation]()
+</details>
+<details>
+<summary>Home Page</summary>
 
+* **admin.py**<br>
+![pep8-validation](docs/img/validations)
+* **apps.py**<br>
 
+![pep8-validation](docs/img/validations)
+* **forms.py**<br>
+![pep8-validation](docs/img/validations)
+
+* **models.py**<br>
+![pep8-validation](docs/img/validations/home)
+
+* **urls.py**<br>
+![pep8-validation](docs/img/validations)
+
+* **views.py**<br>
+![pep8-validation](docs/img/validations)
+</details>
+<details>
+<summary>Menu Page</summary>
 
 
 

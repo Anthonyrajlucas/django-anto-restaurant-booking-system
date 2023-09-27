@@ -8,5 +8,5 @@ from .views import Contact
 
 
 urlpatterns = [
-    path('',Contact.as_view(), name="contact_us"),
+    path('', Contact.as_view(), name="contact_us"),
 ]
