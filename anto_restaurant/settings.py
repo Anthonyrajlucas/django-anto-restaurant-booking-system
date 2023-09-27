@@ -32,7 +32,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = True
 
 
-ALLOWED_HOSTS = [ '8000-anthonyrajl-djangoantor-qmdhqu4cavz.ws-eu105.gitpod.io',
+ALLOWED_HOSTS = [ '8000-anthonyrajl-djangoantor-qmdhqu4cavz.ws-eu104.gitpod.io',
                  'django-anto-restaurant-booking-a13bc07eab32.herokuapp.com' ,
                  "localhost" ]
 
