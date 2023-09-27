@@ -266,19 +266,19 @@ The python code was tested using [PEP8ci](https://pep8ci.herokuapp.com/) validat
 <summary>Booking Page</summary>
 
 * **admin.py**<br>
-![pep8-validation]()
+![pep8-validation](media/booking_admin.py.jpg)
 
 * **forms.py**<br>
-![pep8-validation]()
+![pep8-validation](media/booking_form.py.jpg)
 
 * **models.py**<br>
-![pep8-validation]()
+![pep8-validation](media/booking_model.py.jpg)
 
 * **urls.py**<br>
-![pep8-validation]()
+![pep8-validation](media/booking_urls.py.jpg)
 
 * **views.py**<br>
-![pep8-validation]()
+![pep8-validation](media/booking_views.py.jpg)
 </details>
 <details>
 <summary>Contact Page</summary>
