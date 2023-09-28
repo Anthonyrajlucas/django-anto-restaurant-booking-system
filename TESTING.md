@@ -219,8 +219,6 @@ At the time of deployment the validation have the following outcome:<br><br>
 ![html-validation](media/w3_html_validator.jpg)
 
 
-
-
 The following pages have been tested by direct input:
 * Home
 * Menu
@@ -354,6 +352,11 @@ The performance of the website was tested with Lighthouse
 
 ## Bugs 
 
+I encountered countless bugs during the whole process of building this project. Most of them I was able to fix on time, but unfortunately, due to time constraint the ones listed below are still yet to be fixed. And I will do my best to resolve them on future release.
+
+* **The menu page text responsiveness can be significantly improve.**
+    - Due to time constraint, I did not manage to fix responsiveness issues on time.
+    
 
 Back to [README.md](README.md)<br>
 
