@@ -245,7 +245,7 @@ The CSS code was validated using [W3 Jigsaw Validator](https://jigsaw.w3.org/css
 At the time of deployment the validation for *style.css* has the following outcome:<br><br>
 
 
-![css-validation](media/W3C-css-validation.jpg)
+![css-validation](media/w3c_css_validation.jpg)
 
 ### Python
 The python code was tested using [PEP8ci](https://pep8ci.herokuapp.com/) validator.<br>

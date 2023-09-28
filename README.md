@@ -163,7 +163,7 @@ The project uses a cloud-based PostgreSQL database provided by [ElephantSQL](htt
 
 The diagram below was created before the actual development of the website which led to some changes to the attributes and tables for finding the most relevant and useful ones to be kept. Due to time constraint, I was not able to make an updated version on time, but I will make sure to update this on future releases.
 
-![schema-diagram](media/Schema.png)
+![schema-diagram](media/)
 
 ### Surface<hr>
 #### Color Scheme
@@ -223,17 +223,17 @@ The inputs are validated after the following rules:
   - Fields cannot be empty.
   - User must choose total table for booking.
 
-    ![create-booking](media/create-booking.jpg)
+    ![create-booking](media/create_booking.jpg)
 
 
 Upon successful booking, a button confirming the reservation appears to give feedback to the user.
 
-  ![create-booking-success](media/create-booking-success.jpg)
+  ![create-booking-success](media/create_booking_success.jpg)
 
   The user wish to edit and delete the booking 
 
-  ![edit-booking](media/edit-booking.jpg)
-  ![delete-booking](media/delete-booking.jpg)
+  ![edit-booking](media/edit_booking.jpg)
+  ![delete-booking](media/delete_booking.jpg)
 
 #### Menu 
 * On the *Menu* page there is a list with all the menu elements. Every item represents a meal with details such as *Name*, *Image*, *Price*, and *Description*. The list design is simple and attractive.<br>
@@ -245,7 +245,7 @@ The users' accounts have been created using the **django allauth** module. This 
 Considering that the website is created for a restaurant, the profile of the user is created to display essential information such as name and email.<br>
 
 ![profile](media/profilelogin.jpg)
-![profiel-login-success-msg](media/profile-login-success-msg.jpg)
+![profiel-login-success-msg](media/profile_login_success_msg.jpg)
 
 ### Footer
 
