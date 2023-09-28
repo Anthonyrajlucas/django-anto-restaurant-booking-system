@@ -163,7 +163,7 @@ The project uses a cloud-based PostgreSQL database provided by [ElephantSQL](htt
 
 The diagram below was created before the actual development of the website which led to some changes to the attributes and tables for finding the most relevant and useful ones to be kept. Due to time constraint, I was not able to make an updated version on time, but I will make sure to update this on future releases.
 
-![schema-diagram](media/)
+![schema-diagram](media/schema.png)
 
 ### Surface<hr>
 #### Color Scheme
