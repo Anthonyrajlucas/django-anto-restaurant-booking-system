@@ -216,7 +216,7 @@ For pages that require authentication, I used the "validate by direct input" met
 At the time of deployment the validation have the following outcome:<br><br>
 
 
-![html-validation](media/)
+![html-validation](media/w3_html_validator.jpg)
 
 
 
