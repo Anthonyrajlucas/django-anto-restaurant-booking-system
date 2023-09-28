@@ -6,7 +6,7 @@
 
 **Developer:** Anthony Raj 
 
-**[View live website here]()**  :computer:
+**[View live website here](https://django-anto-restaurant-booking-a13bc07eab32.herokuapp.com/)**  :computer:
 
 # Table of Content
  * [Overview](#overview)
